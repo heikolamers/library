@@ -6,7 +6,7 @@
 locLib = {
 
 	setLocationProperties = function(path, latitude, longitude, locationName)
-		local obj = inmation.getobject()
+		local obj = inmation.getobject(path)
 		if obj == nil then error("Object with path '" .. path "' not found.") end
 		obj.Location.Latitude = latitude
 		obj.Location.Longitude = longitude
